@@ -58,6 +58,7 @@ RUN yum -y install patchelf
 
 # install kernel on this image, so we can grab .config from it!
 RUN yum -y install initscripts grubby linux-firmware
+RUN yum -y install elfutils-libelf-devel
 
 # cleanup
 RUN yum clean all
